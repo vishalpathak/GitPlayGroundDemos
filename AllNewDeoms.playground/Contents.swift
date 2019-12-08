@@ -2,16 +2,12 @@ import UIKit
 
 var str = "Hello, playground"
 
-//Simple Class with initializer
-class Person{
-    var name: String
-    var age: Int
-    
-    init(name: String, age: Int) {
-        self.name = name
-        self.age = age
-    }
+//Simple structure with optional variables
+struct Employee{
+    var empName: String?
+    var empId: Int?
 }
 
-let objPerson = Person(name: "Rock", age: 35)
-print("Person:\(objPerson.name, objPerson.age)")
+let objEmp = Employee(empName: "Mike", empId: 51879)
+print("Emp Details:\(objEmp.empName, objEmp.empId)")
+
